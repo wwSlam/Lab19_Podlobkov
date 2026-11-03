@@ -1,1 +1,130 @@
 ﻿
+
+// int CountCharacter(string text, char target)
+// {
+//     int count = 0;
+
+//     foreach (char symbol in text)
+//     {
+//         if (symbol == target)
+//         {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+
+
+// Console.WriteLine(CountCharacter("мама", 'м'));
+// Console.WriteLine(CountCharacter("Код 2026", ' '));
+// Console.WriteLine(CountCharacter("", 'а'));
+
+
+// int CountCharacter(string text, char target)
+// {
+//     int count = 0;
+
+//     for (int i = 0; i < text.Length; i++)
+//     {
+//         if (text[i] == target)
+//         {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// Console.WriteLine(CountCharacter("мама", 'м'));
+// Console.WriteLine(CountCharacter("", 'м'));
+
+
+
+// int CountDigits(string text)
+// {
+//     int count = 0;
+
+//     foreach (char symbol in text)
+//     {
+//         if (char.IsDigit(symbol))
+//         {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+// Console.WriteLine(CountDigits("Код 2026!"));
+
+// int CountLetters(string text)
+// {
+//     int count = 0;
+//     foreach (char symbol in text)
+//     {
+//         if (char.IsLetter(symbol))
+//         {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+
+// Console.WriteLine(CountLetters("Код 2026!"));
+
+
+// int CountDigits(string text)
+// {
+//     int count = 0;
+
+//     foreach (char symbol in text)
+//     {
+//         if (char.IsDigit(symbol))
+//         {
+//             count ++;
+//         }
+//     }
+
+//     return count;
+// }
+
+
+// Console.WriteLine(CountDigits("A2B3"));
+
+
+// int FindCharacterIndex(string text, char target)
+// {
+//     for (int i = 0; i < text.Length; i++)
+//     {
+//         if (text[i] == target)
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// Console.WriteLine(FindCharacterIndex("banana", 'a'));
+// Console.WriteLine(FindCharacterIndex("banana", 'b'));
+// Console.WriteLine(FindCharacterIndex("banana", 'z'));
+// Console.WriteLine(FindCharacterIndex("", 'a'));
+
+
+int FindCharacterIndex(string text, char target)
+{
+    int index = -1;
+
+    for (int i = 0; i > text.Length; i++)
+    {
+        if (text[i] == target)
+        {
+            index = i;
+        }
+    }
+
+    return index;
+}
+
+Console.WriteLine(FindCharacterIndex("banana", 'a'));
